@@ -4,6 +4,7 @@
    --principal:#F08910;
    --background: #fff;
    --text: #777777;
+   --backgroundSecundary: #F1F1F1;
    --border:.1rem solid #aaa;
 }
 
@@ -11,8 +12,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--background);
     font-family: "Roboto";
+}
+
+body{
+    background-color: var(--backgroundSecundary) ;
 }
 
 /* Estilo menu*/
@@ -30,7 +34,7 @@
 
 .navItem{
     display: flex;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .navLink{
@@ -104,7 +108,7 @@ header{
     height: 100%;
     width: 100%;
     background-color: #F08910;
-    
+
 }
 
 /* Fim Estilo Main*/
@@ -112,23 +116,25 @@ header{
 /* Inicio Estilo Servicos*/
 .servicos{
 
+    height: 800px;
+    background-color: var(--backgroundSecundary);
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    height: 350px;
-    background-color: black;
+    
 }
 
 .servicosInfo{
     
     height: 100%;
     width: 80%;
-    background-color: aqua;
+    background-color: var(--background);
 
-    margin-top: 7%;
+    margin-top: -70px;
     position: absolute;
+    
 
     display: flex;
     flex-direction: column;
@@ -140,8 +146,9 @@ header{
 .butoes{
     margin:10px ;
     width: 90%;
-    height: 30%;
-    background-color: green;
+    height: 45%;
+    margin-top: 60px;
+    background-color: var(--background);
 
     display: flex;
     justify-content: space-between;
@@ -152,5 +159,46 @@ header{
     height: 100%;
     border-radius: 20px;
 
-    background-color: #F08910;
+    background-image: linear-gradient(#FDFDFD,#ebe5e5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.individualButton img{
+    padding-bottom: 25px;
+}
+
+.individualButton p{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.servicosInfo p{
+    font-size: 20px;
+}
+
+/* Fim Estilo Servicos*/
+
+/* Inicio Estilo Rodapé*/
+
+.footer{
+    height: 60px;
+}
+.Conteudofooter{
+    height: 100%;
+    background-color: #000;
+    color: var(--background);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.Conteudofooter .nomeEmpresa{
+    color: var(--principal);
+    padding-right: 5px;
+    text-decoration: none;
 }
