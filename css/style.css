@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;300&display=swap');
+
+:root{
+   --principal:#F08910;
+   --background: #fff;
+   --text: #777777;
+   --border:.1rem solid #aaa;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: "Roboto";
+}
+
+.navbar{
+    display: flex;
+}
+
+.navList{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navItem{
+    padding: 0 10px;
+}
+
+.navLink{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.navItem a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #F08910;
+    margin: auto;
+    display: block;
+}
+
+.navItem a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+.navItem a:hover{
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 10%;
+
+    background-color: var(--background);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.userInformation{
+    display: flex;
+    
+}
+
+.userInformation .dadosUser{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+}
+
+.dadosUser p{
+    font-weight: bold;
+}
+
+.dadosUser a{
+    color: var(--principal);
+    text-align: end;
+}
