@@ -15,6 +15,9 @@
     font-family: "Roboto";
 }
 
+/* Estilo menu*/
+
+
 .navbar{
     display: flex;
 }
@@ -26,6 +29,7 @@
 }
 
 .navItem{
+    display: flex;
     padding: 0 10px;
 }
 
@@ -54,9 +58,6 @@
     color: #000;
     font-weight: bold;
 }
-
-
-
 header{
     display: flex;
     justify-content: space-between;
@@ -90,4 +91,66 @@ header{
 .dadosUser a{
     color: var(--principal);
     text-align: end;
+}
+
+/* Fim Estilo Menu*/
+
+/* Inicio Estilo Main*/
+.main{
+    height: 150px;  
+}
+
+.containerMain{
+    height: 100%;
+    width: 100%;
+    background-color: #F08910;
+    
+}
+
+/* Fim Estilo Main*/
+
+/* Inicio Estilo Servicos*/
+.servicos{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+    background-color: black;
+}
+
+.servicosInfo{
+    
+    height: 100%;
+    width: 80%;
+    background-color: aqua;
+
+    margin-top: 7%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.butoes{
+    margin:10px ;
+    width: 90%;
+    height: 30%;
+    background-color: green;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.individualButton{
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+
+    background-color: #F08910;
 }
