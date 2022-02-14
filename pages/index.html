@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solution Ideia2001</title>
+    <title>Solution Ideia2001- Matheus Barboza</title>
 
     <!-- Css File  -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../database/database.json">
 
 </head>
 <body>
@@ -18,7 +19,12 @@
         <header>
             <img class="logo" src="../images/logo.png" alt="logo">
 
-            <nav class="navbar">
+            
+                <button class="mobileButton">&#9776;</button>
+           
+            
+            
+            <nav id="nav" class="navbar">
                 <ul class="navList">
                     <li class="navItem">
                         <a href="#home" class="navLink">Home</a>
@@ -31,12 +37,12 @@
                 </ul>
                 <ul class="navList">
                     <li class="navItem">
-                        <a href="#services" class="navLink">Usuarios</a>
+                        <a href="#services" class="navLink">Usuários</a>
                     </li>
                 </ul>
                 <ul class="navList">
                     <li class="navItem">
-                        <a href="#services" class="navLink">Relatorios</a>
+                        <a href="#services" class="navLink">Relatórios</a>
                     </li>
                 </ul>
                 
@@ -50,6 +56,8 @@
                     <a href="">Desconectar</a>
                 </div>
             </div>
+
+            
         </header>
         
     </section>
@@ -69,20 +77,22 @@
     <section id="services" class="servicos">
         <div class="servicosInfo">
             
+
             <p>Olá <strong>Igor Golçalves</strong>, Selecione uma das opções abaixo :</p>
+            
         
-            <div onclick="acao()"class="butoes">
-               <a class="individualButton"target="_blank">
-                   <img src="../images/icone-eventos.png" alt="icone de eventos">
-                   <p>Meus Eventos</p>
+            <div class="butoes">
+               <a onclick="evento()" id="buttonEventos" class="individualButton"target="_blank">
+                   <img class="iconeImage" src="../images/icone-eventos.png" alt="icone de eventos">
+                   <p id="nameEvent">Meus eventos</p>
                </a>
-               <a class="individualButton" target="_blank">
-                    <img src="../images/icone-usuarios.png" alt="Icone usuarios">
-                   <p>Usuários</p>
+               <a onclick="usuario()"  id="buttonUsuarios" class="individualButton" target="_blank" >
+                    <img class="iconeImage" src="../images/icone-usuarios.png" alt="Icone usuarios">
+                   <p id="nameEvent">Usuários</p>
                 </a>
-                <a class="individualButton" target="_blank">
-                    <img src="../images/icone-relatorios.png" alt="Icone Relatórios">
-                   <p>Relatórios</p>
+                <a onclick="relatorio()" id="buttonRelatorios" class="individualButton" target="_blank">
+                    <img class="iconeImage" src="../images/icone-relatorios.png" alt="Icone Relatórios">
+                   <p id="nameEvent" >Relatórios</p>
                </a>
             </div>
         </div>
@@ -99,8 +109,8 @@
                 <span class="modalClose">X</span>
              </div>
             <div class="descriptionModal">
-                <img class="iconModal" src="../images/iconModal.png" alt="icone modal">
-                <p>Voce acabou de clicar em um serviço !</p>
+                <img class="iconModal" src="../images/iconModal.png" alt="icone ">
+                <a id="resposta"></a>
             </div>
          </div>
 
@@ -115,6 +125,8 @@
     </section>
 
     <!-- Link Javascript  -->
-    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js">
+        
+    </script>
 </body>
 </html>
