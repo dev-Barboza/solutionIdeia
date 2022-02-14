@@ -44,17 +44,17 @@ modalClose.addEventListener('click', function(){
 
 function evento() {
   document.getElementById("buttonEventos").click();
-  document.getElementById('resposta').innerHTML = 'Bem vindo(a) á seção de eventos ';
+  document.getElementById('resposta').innerHTML = 'Bem-vindo(a) á seção de eventos ';
 };
 
 function usuario() {
   document.getElementById("buttonUsuarios").click();
-  document.getElementById('resposta').innerHTML = 'Bem vindo(a) á seção de usuários !'
+  document.getElementById('resposta').innerHTML = 'Bem-vindo(a) á seção de usuários !'
 }
 
 function relatorio() {
   document.getElementById("buttonRelatorios").click();
-  document.getElementById('resposta').innerHTML = 'Bem vindo(a) á seção de relatórios !'
+  document.getElementById('resposta').innerHTML = 'Bem-vindo(a) á seção de relatórios !'
 }
 
 const buttons = document.querySelectorAll('.individualButton');
@@ -65,7 +65,7 @@ buttons.forEach(btn => {
   })
 })
 
-//Responsividade
+//Responsividade Menu
 const navbar = document.querySelector('.navbar');
 const button = document.querySelector('.mobileButton');
 const closeButton = document.querySelector('.mobileButton').children[0];

@@ -29,6 +29,7 @@ body{
 .navList{
     display: flex;
     align-items: center;
+    
     list-style: none;
 }
 
@@ -64,13 +65,13 @@ body{
     color: #000;
     font-weight: bold;
 }
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding: 30px 10%;
-
     background-color: var(--background);
 }
 
@@ -79,10 +80,7 @@ header{
 }
 
 .userInformation{
-
-    display: flex;
-
-    
+    display: flex; 
 }
 
 .userInformation .dadosUser{
@@ -114,11 +112,6 @@ header{
     display: none;
 }
 
-
-
-
-
-
 /* Fim Estilo Menu*/
 
 
@@ -145,16 +138,12 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
 }
 
 .servicosInfo{
-    
     height: 100%;
     width: 80%;
     background-color: var(--background);
-
     margin-top: -70px;
     position: absolute;
     
@@ -186,14 +175,7 @@ header{
     color: var(--textColorCards);
     font-weight: bold;
     cursor: pointer;
-
     background-image: linear-gradient(#FDFDFD,#ebe5e5);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1); 
     -ms-transition: all 200ms ease-in;
@@ -202,6 +184,13 @@ header{
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: scale(1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
 }
 
 .individualButton:hover{
@@ -221,11 +210,6 @@ header{
     padding-bottom: 25px;
 }
 
-.individualButton p{
-    font-weight: bold;
-    font-size: 17px;
-}
-
 .servicosInfo p{
     font-size: 20px;
 }
@@ -233,6 +217,13 @@ header{
 /* Fim Estilo Servicos*/
 
 /* Inicio Estilo Modal*/
+
+.modal{
+    background-color: var(--backgroundSecundary);
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
 
 .modalBg{
     position: fixed;
@@ -255,12 +246,6 @@ header{
     opacity: 1 ;
 }
 
-.modal{
-    background-color: var(--backgroundSecundary);
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
-}
 
 .modalClose{
     top: 10px;
@@ -401,4 +386,6 @@ header{
     }
    
 }
+
+/* Fim Responsividade */
 
